@@ -1,0 +1,254 @@
+*{
+    transition: 0.3 ease;
+    font-family: 'Montserrat', sans-serif;
+}
+.refresh-button{
+    display: flex;
+    width: 90%;
+    padding-left: 2%;
+}
+.refresh-button a{
+    color: white;
+    transition: .3s;
+    font-size: 13px;
+}
+.refresh-button a:hover{
+    text-decoration: none;
+    color: #6faaf7;
+}
+.first-header{
+    color: #124588;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.option-input{
+    border: 1px solid rgb(190, 190, 190);
+    outline: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 70%;
+    margin-top: 2%;
+    font-size: 13px;
+    transition: 0.3 ease;
+
+}
+.question-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+}
+.input{
+    border: 1px solid rgb(190, 190, 190);
+    outline: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 13px;
+    width: 70%; 
+    transition: 0.3 ease;
+
+}
+.option-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 400;
+    color: #124588;
+}
+.input-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+    margin-top: 2%;
+}
+.form{
+    width: 90%;
+    height: 97%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-body{
+    width: 58%;
+    height: 97%;
+    margin-left: 1%;
+    margin-top: .6%;
+    background-color: white;
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+    padding-left: 4%;
+    padding-top: 11%;
+    padding-bottom: 7%;
+}
+p{
+    color: grey;
+    font-size: 13px;
+}
+.body{
+    display: flex;
+    background-color: #124588;
+    height: 100vh;
+}
+
+.sidebar{
+    width: 40%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 7%;
+    overflow: auto;
+
+}
+.content{
+    width: 90%;
+    height: 90%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.welcome-text{
+    font-weight: 300;
+    color: white;
+    font-size: 30px;
+    line-height: 55px;
+    letter-spacing: 0.5px;
+}
+.buttons{
+    margin-top: 4%;
+    width: 42%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.add-button{
+    background-color: #124588;
+    color: white;
+    border: none;
+    height: 45px;
+    font-size: 13px;
+    width: 39%;
+    cursor: pointer;
+    outline: none;
+    transition: 0.1s;
+}
+.add-button:hover{
+    width: 42%;
+    height: 47px;
+    font-size: 14px;
+}
+.generate-button{
+    background-color: white;
+    color: #124588;
+    border: none;
+    border: 1px solid #124588;
+    height: 45px;
+    font-size: 13px;
+    width: 39%;
+    outline: none;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.generate-button:hover{
+    width: 42%;
+    height: 47px;
+    font-size: 14px;
+}
+
+.answer{
+    color: white;
+    margin-top: 1%;
+    font-size: 20px;
+}
+@media screen and (max-width: 1024px){
+    .body{
+        display: flex;
+        flex-direction: column;
+        /* height: auto; */
+    }
+    .form-body{
+        width: 98%;
+        height: 49%;
+        border-radius: 10px;
+    }
+    /* .form{
+        overflow: visible;
+        height: auto;
+    } */
+    .sidebar{
+        width: 98%;
+        height: 50%;
+    }
+    .welcome-text{
+        font-size: 25px;
+    }
+    .header{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 614px){
+    .buttons{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 515px){
+    .buttons{
+        width: 65%;
+    }
+}
+@media screen and (max-width: 419px){
+    .first-header{
+        font-size: 25px;
+    }
+    .option-header{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 395px){
+    .buttons{
+        width: 85%;
+    }
+    .option-input{
+        margin-top: 3%;
+    }
+    .welcome-text{
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 389px){
+    .header{
+        font-size: 25px;
+    }
+    .answer{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 320px){
+    .first-header{
+        font-size: 20px;
+    }
+    .input-header{
+        margin-top: 7%;
+    }
+    .option-header{
+        font-size: 20px;
+    }
+    .header{
+        font-size: 20px;
+    }
+    .answer{
+        font-size: 14px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
